@@ -28,7 +28,7 @@ func TestRotation(t *testing.T) {
 	}
 
 	ship = types.Rotate(ship, -80)
-	expected = types.Rotation(-35)
+	expected = types.Rotation(45 - 80)
 	if ship.Rotation() != expected {
 		t.Fatalf("New ship rotation (%v) does not equal %v", ship.Rotation(), expected)
 	}
